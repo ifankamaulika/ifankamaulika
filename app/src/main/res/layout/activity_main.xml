@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B202B"
+    tools:context=".activity.MainActivity">
+
+
+    <EditText
+        android:id="@+id/id_kode"
+        android:layout_width="405dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FB0000"
+        android:backgroundTintMode="src_over"
+        android:ems="10"
+        android:hint="Kode Bukti"
+        android:inputType="numberSigned|textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FAF6F6"
+        android:textColorHint="#FBF8F8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/id_judul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ket"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/id_judul"
+        android:layout_width="406dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#F60404"
+        android:backgroundTintMode="src_over"
+        android:ems="10"
+        android:hint="Judul"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FBFBFB"
+        android:textColorHighlight="#F60707"
+        android:textColorHint="#FBF6F6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/id_pengarang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_kode"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/id_pengarang"
+        android:layout_width="400dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FB0505"
+        android:backgroundTintMode="src_over"
+        android:ems="10"
+        android:hint="Pengarang"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#FBFBFB"
+        android:textColorHint="#F6F4F4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnInsert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_judul"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#F4511E"
+        android:text="SAVE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_pengarang"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#214AB5"
+        android:text="View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsert" />
+
+    <TextView
+        android:id="@+id/tv_ket"
+        android:layout_width="101dp"
+        android:layout_height="24dp"
+
+        android:layout_marginTop="20dp"
+        android:background="#039BE5"
+        android:text="Keteangan"
+        android:textAlignment="center"
+        android:textColor="#F5F7FA"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="355dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seller_no_logo_0_removebg_preview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
